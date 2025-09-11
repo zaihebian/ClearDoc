@@ -21,7 +21,7 @@ Perfect for integrating into document processing pipelines (e.g., OCR, RPA, or c
 
 Clone the repo:
 ```bash
-git clone https://github.com/<your-username>/ClearDoc.git
+git clone https://github.com/zaihebian/ClearDoc.git
 cd ClearDoc
 ```
 
@@ -110,12 +110,6 @@ file: <your-document-image>
    ```bash
    curl -X POST -F "file=@sample.png" https://<YOUR-SERVICE-URL>/predict
    ```
-
----
-
-## 🖼️ Example
-
-![demo](docs/demo.png)
 
 ---
 
