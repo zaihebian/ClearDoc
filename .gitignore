@@ -19,6 +19,7 @@ ENV/
 # Model artifacts (large files, logs)
 mlruns/
 out/
+model/
 
 # Hugging Face / Transformers cache
 ~/.cache/
