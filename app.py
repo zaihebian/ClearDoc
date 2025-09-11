@@ -35,7 +35,7 @@ def root():
     return {"status": "ok", "labels": list(id2label.values())}
 
 @app.post("/predict")
-@torch.no_grad()
+@torch.inference_mode()
 async def predict(file: UploadFile = File(...)):
     img_bytes = await file.read()
     img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
